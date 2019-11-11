@@ -1,0 +1,6 @@
+{
+    "eslint.workingDirectories": [
+        "./wp-content/themes/<THEME_NAME>/"
+    ]
+}
+`
