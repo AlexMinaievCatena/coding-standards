@@ -52,9 +52,7 @@
                     "inside-block",
                     "after-same-name"
                 ],
-                "ignore": [
-                    "after-comment"
-                ]
+                "ignore": ["after-comment"]
             }
         ],
         "selector-combinator-space-after": "always",
@@ -66,9 +64,7 @@
         "declaration-block-no-duplicate-properties": [
             true,
             {
-                "ignore": [
-                    "consecutive-duplicates"
-                ]
+                "ignore": ["consecutive-duplicates"]
             }
         ],
         "declaration-colon-space-before": "never",
@@ -87,9 +83,7 @@
         "comment-empty-line-before": [
             "always",
             {
-                "except": [
-                    "first-nested"
-                ],
+                "except": ["first-nested"],
                 "ignore": [
                     "after-comment",
                     "stylelint-commands"
@@ -120,6 +114,5 @@
         "media-feature-colon-space-before": "never",
         "media-feature-colon-space-after": "always",
         "max-line-length": 120
-    },
-    "ignoreFiles": []
+    }
 }
