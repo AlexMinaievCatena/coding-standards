@@ -44,7 +44,7 @@ But because of using SCSS Media Queries should be used inside selector to which 
 ### How to use standards with legacy code
 After you will add all configs for Code Standards and Sniffer/Linters(instructions below) you will probably have bunch
 of errors in bunch of files. Your working process will be next:   
-When you star start working on a file, you need to run this file with auto fix Sniffer/Linter then fix manually all errors
+When you start working on a file, you need to run this file with auto fix Sniffer/Linter then fix manually all errors
 that cannot be fixed automatically. Then make a separate commit of this file.
 
 ### CodeSniffer and Linters 

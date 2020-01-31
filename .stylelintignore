@@ -1,0 +1,5 @@
+# Add Here path's to files that should be ignored by stylelint
+
+**/vendors/**/*.scss
+**/**/*.min.css
+/node_modules/**
