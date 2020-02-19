@@ -1,13 +1,11 @@
 {
-    "root": true,
     "env": {
         "browser": true,
         "es6": true,
-        "jquery": true,
-        "commonjs": true
+        "node": true
     },
     "extends": [
-        "plugin:@wordpress/eslint-plugin/recommended"
+        "standard"
     ],
     "globals": {
         "Atomics": "readonly",
@@ -17,8 +15,5 @@
         "ecmaVersion": 2018
     },
     "rules": {
-        "linebreak-style": 0,
-        "indent": ["error", 4],
-        "no-var": 0
     }
 }
