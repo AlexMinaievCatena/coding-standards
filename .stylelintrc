@@ -1,118 +1,40 @@
 {
     "extends": [
-        "stylelint-config-wordpress/scss",
-        "stylelint-config-rational-order"
+        "stylelint-config-recommended-scss",
+        "stylelint-config-sass-guidelines"
     ],
-    "plugins": ["stylelint-scss"],
+    "plugins": [
+        "stylelint-scss",
+        "stylelint-order",
+        "stylelint-config-rational-order/plugin"
+    ],
     "rules": {
-        "no-descending-specificity": null,
-        "scss/double-slash-comment-empty-line-before": null,
-        "order/order": [
-            {
-                "type": "at-rule",
-                "name": "extend"
-            },
-            "custom-properties",
-            "dollar-variables",
-            "declarations"
-        ],
-        "at-rule-no-unknown": [
+        "order/properties-order": [],
+        "plugin/rational-order": [
             true,
             {
-                "ignoreAtRules": [
-                    "extend",
-                    "at-root",
-                    "debug",
-                    "warn",
-                    "error",
-                    "if",
-                    "else",
-                    "for",
-                    "each",
-                    "while",
-                    "mixin",
-                    "include",
-                    "content",
-                    "return",
-                    "function"
-                ]
+                "border-in-box-model": false,
+                "empty-line-between-groups": false
             }
         ],
-        "indentation": [4],
-        "string-quotes": "double",
-        "no-duplicate-selectors": true,
-        "color-hex-case": "lower",
-        "color-hex-length": "short",
-        "color-named": "never",
+        "order/properties-alphabetical-order": false,
         "declaration-empty-line-before": "never",
-        "at-rule-empty-line-before": [
-            "always",
+        "max-nesting-depth": [
+            3,
             {
-                "except": [
-                    "inside-block",
-                    "after-same-name"
-                ],
-                "ignore": ["after-comment"]
+                "ignore": ["pseudo-classes"]
             }
         ],
-        "selector-combinator-space-after": "always",
-        "selector-attribute-quotes": "always",
-        "selector-attribute-operator-space-before": "never",
-        "selector-attribute-operator-space-after": "never",
-        "selector-attribute-brackets-space-inside": "never",
-        "declaration-block-trailing-semicolon": "always",
-        "declaration-block-no-duplicate-properties": [
-            true,
-            {
-                "ignore": ["consecutive-duplicates"]
-            }
-        ],
-        "declaration-colon-space-before": "never",
-        "declaration-colon-space-after": "always-single-line",
-        "function-comma-space-after": "always-single-line",
-        "function-parentheses-newline-inside": "always-multi-line",
-        "function-parentheses-space-inside": "never-single-line",
-        "property-no-vendor-prefix": true,
-        "value-no-vendor-prefix": true,
-        "number-leading-zero": "never",
-        "function-url-quotes": "always",
-        "font-weight-notation": "numeric",
-        "font-family-name-quotes": "always-where-required",
-        "comment-whitespace-inside": "always",
-        "selector-max-type": 4,
-        "comment-empty-line-before": [
-            "always",
-            {
-                "except": ["first-nested"],
-                "ignore": [
-                    "after-comment",
-                    "stylelint-commands"
-                ]
-            }
-        ],
-        "at-rule-no-vendor-prefix": true,
         "max-empty-lines": 1,
-        "block-closing-brace-empty-line-before": "never",
-        "block-closing-brace-newline-after":"always-multi-line",
-        "rule-empty-line-before": [
-            "always-multi-line",
+        "selector-class-pattern": [
+            "",
             {
-                "except": [
-                    "after-single-line-comment",
-                    "first-nested"
-                ]
+                "message":
+                "TODO: Temporary no rules for selectors and class names"
             }
         ],
-        "custom-property-empty-line-before": "never",
-        "selector-pseudo-element-colon-notation": "double",
-        "selector-pseudo-class-parentheses-space-inside": "never",
-        "selector-no-vendor-prefix": true,
-        "media-feature-range-operator-space-before": "always",
-        "media-feature-range-operator-space-after": "always",
-        "media-feature-parentheses-space-inside": "always",
-        "media-feature-name-no-vendor-prefix": true,
-        "media-feature-colon-space-before": "never",
-        "media-feature-colon-space-after": "always",
-        "max-line-length": 120
+        "string-quotes": "double",
+        "number-leading-zero": "always",
+        "indentation": [4]
     }
 }
