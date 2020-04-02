@@ -184,6 +184,7 @@ and then you need just run in console `npm run lint:js` to check all files
 * Install StyleLint local `npm i -D stylelint`
 * Install packages for stylelint   
 `npm i -D stylelint-config-sass-guidelines`   
+`npm i -D stylelint-config-recommended-scss`   
 `npm i -D stylelint-scss`   
 `npm i -D stylelint-order`   
 `npm i -D stylelint-config-rational-order`   
