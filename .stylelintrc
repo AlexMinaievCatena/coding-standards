@@ -17,7 +17,7 @@
                 "empty-line-between-groups": false
             }
         ],
-        "order/properties-alphabetical-order": false,
+        "order/properties-alphabetical-order": null,
         "declaration-empty-line-before": "never",
         "max-nesting-depth": [
             3,
