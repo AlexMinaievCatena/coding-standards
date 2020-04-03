@@ -34,7 +34,7 @@
             }
         ],
         "string-quotes": "double",
-        "number-leading-zero": "always",
+        "number-leading-zero": "never",
         "indentation": [4]
     }
 }
